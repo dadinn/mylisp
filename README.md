@@ -1,6 +1,13 @@
 # mylisp
 
-Lisp interpreter written in Clojure, to experiment with new `clojure.specs` features for evaluating and conforming S-exrpessions efficiently.
+Lisp interpreter written in Clojure, mainly as an exercise to experiment with `clojure.spec` features for conforming and destructuring S-expressions.
+
+## Goals
+
+The main goals of this LISP interpreter implementation is to support evaluation of S-expressions of untyped lambda calculus:
+
+* evaluation robust enough, so that Y-Combinator works
+* support for basic LISP macro system (dirty, non-hiegenic)
 
 ## Usage
 
@@ -29,11 +36,8 @@ While in the REPL try executing the following expressions:
     (fact 5)
 	;; => 120
 
-Recursion is supported via Y combinator, using the `defun` macro. Enjoy!
-
 ## License
 
 Copyright © 2014 Daniel Dinnyes
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License either version 1.0 or any later version.
